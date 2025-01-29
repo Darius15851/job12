@@ -1,3 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Жилые дома в селе Кармаскалы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="brick-wall">
+        <div class="container">
+            <h1>Контакты</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог домов</a></li>
+                    <li><a href="about.html">О застройщике</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <div class="container">
+                <h2>Свяжитесь с нами</h2>
+                <form id="contactForm">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="brick-wall">
+        <div class="container">
+            <p>&copy; 2023 Жилые дома в селе Кармаскалы. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Ваше сообщение успешно отправлено!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 <section class="map-section">
     <div class="container">
         <h2>Наш адрес</h2>
