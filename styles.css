@@ -55,7 +55,7 @@ nav ul li a:hover {
 
 /* Героическая секция */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/42.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('44.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 5rem 0;
