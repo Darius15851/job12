@@ -100,3 +100,43 @@ document.querySelectorAll('.rating .star').forEach(star => {
 document.querySelector('.chat-bot-toggle').addEventListener('click', () => {
     document.querySelector('.chat-bot-window').classList.toggle('hidden');
 });
+// Модальное окно
+const modal = document.getElementById('modal');
+const closeModal = document.querySelector('.close');
+
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    modal.classList.remove('hidden');
+});
+
+closeModal.addEventListener('click', () => {
+    modal.classList.add('hidden');
+});
+
+// Анимация при прокрутке
+document.addEventListener('scroll', () => {
+    const elements = document.querySelectorAll('.fade-in');
+    elements.forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight * 0.8) {
+            el.classList.add('active');
+        }
+    });
+});
+
+// Кнопка "Наверх"
+const backToTopButton = document.createElement('div');
+backToTopButton.textContent = '↑ Наверх';
+backToTopButton.classList.add('back-to-top');
+document.body.appendChild(backToTopButton);
+
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
